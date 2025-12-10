@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'mont-heavy';
+    src: url('fonts/Mont-HeavyDEMO.otf') format("opentype");
+    font-weight: 400;
+}
+
+html{
+    background: #708E99;
+    background: linear-gradient(to top,#559bb4, #d6ebe6 );
+    background-attachment: fixed; /*edit*/
+}
+
+body{
+    display:block;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.content{
+    margin: 20px;
+}
+
+.title {
+    font-family: 'mont-heavy', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 13px;
+    color:#ffffff;
+    text-shadow: 1px 1px 10px #00000086;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+    
+    color:#ffffff;
+    text-shadow: 1px 1px 5px #00000088;
+}
+
+.subtitle {
+    margin-top: 36px;
+    font-size:1.5em;
+}
+
+.heroimage {
+    position:relative;
+}
+
+.heroimage img {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+
+    object-fit: cover;
+}
+
+
+.img1 {
+    display:block;
+    filter:brightness(1.2);
+}
+
+.img2 {
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    filter:blur(20px) brightness(1.5);
+}
+
+a {
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+a:hover {
+    color:rgb(115, 234, 255);
+}
+
+
+
+@media (max-width:600px){
+	.heroimage img{
+        height:300px;
+	}
+}
+
+@media (max-width:430px){
+	.heroimage img{
+        height:200px;
+	}
+}
